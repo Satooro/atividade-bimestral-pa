@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Ter min de 65 anos
+        OU
+        Ter trabalhado min 30 anos
+        OU
+        Ter min de 60 anos
+        Ter trabalhado min 25 anos
+
+    -->
+    <script>
+        let codigoEmpregado, anoNascimento, anoIngresso, anoAtual, idade, anosTrabalho;
+        codigoEmpregado = prompt(`Digite o código do empregado`);
+        anoAtual = parseInt(prompt(`Digite o ano atual`));
+        anoNascimento = parseInt(prompt(`Digite o ano de nascimento do empregado`))
+        anoIngresso = parseInt(prompt(`Digite o ano de ingresso na empresa`));
+        idade = anoAtual - anoNascimento;
+        anosTrabalho = anoAtual - anoIngresso;
+        alert(`O empregado código: ${codigoEmpregado} com ${idade} anos e ${anosTrabalho} anos de trabalho ${ (idade >= 65 || anosTrabalho >= 30 || (idade >= 60 && anosTrabalho >= 25)) ? "requere" : "não requere" } aposentadoria.`)
+    </script>
+</body>
+</html>

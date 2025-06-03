@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let salarioFixo,comissaoFixa, carrosVendidos, valorTotalVendas;
+        carrosVendidos = parseInt(prompt(`Informe quantos carros foram vendidos pelo funcionário:`));
+        valorTotalVendas = parseFloat(prompt(`Informe o valor total de suas vendas`));
+        salarioFixo = parseFloat(prompt(`Informe o salário fixo dele:`));
+        comissaoFixa  = parseFloat(prompt(`Informe o valor que ele recebe por carro vendido:`));
+        let salarioFinal = salarioFixo + (comissaoFixa + carrosVendidos) + (valorTotalVendas * 0.05);
+        alert(`O total de vendas foi ${carrosVendidos} faturando um total de ${salarioFinal}`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let custoFabrica = parseFloat(prompt("Informe o custo de fábrica:"));
+        let porcenDistrib = 0.28;
+        let porcenImpost = 0.45;
+        porcenDistrib = custoFabrica * porcenDistrib;
+        porcenImpost = custoFabrica * porcenImpost;
+        alert(`O custo de fábrica é: ${custoFabrica}\nO porcentual da distribuidora é: ${porcenDistrib}\nE o porcentual de impostos é: ${porcenImpost}\nTotalizando: ${custoFabrica + porcenImpost + porcenDistrib}`);
+    </script>
+</body>
+</html>

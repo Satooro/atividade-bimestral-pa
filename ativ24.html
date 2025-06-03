@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vetor = [];
+        let count;
+        let total = 0;
+        for(count = 0; count < 5; count++){
+            vetor[count] = parseFloat(prompt(`Informe um número para a posição ${count+1}:`));
+        }
+        let numEscolhido = parseFloat(prompt(`Informe mais um número`));
+        for(count = 0; count < 5; count++){
+            if(vetor[count] == numEscolhido){
+                total = total + 1;
+            }
+        }
+        alert(`O número ${numEscolhido} aparece ${total} vezes.`);
+    </script>
+</body>
+</html>

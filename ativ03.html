@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        calcularIdadeEmDias = (anos, meses, dias) => {
+            const diasAno = 365;
+            const diasMes = 30;
+            return (anos * diasAno) + (meses * diasMes) + dias;
+        }
+        let idade = [];
+        idade[0] = parseInt(prompt(`Informe a sua idade em anos:`))
+        idade[1] = parseInt(prompt(`Informe a sua idade em meses:`))
+        idade[2] = parseInt(prompt(`Informe a sua idade em dias:`))
+        alert(`Sua idade em apenas dias é: ${calcularIdadeEmDias(idade[0], idade[1], idade[2])}`);
+    </script>
+</body>
+</html>

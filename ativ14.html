@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let anoNascimento = parseInt(prompt(`Informe seu ano de nascimento:`));
+        let anoAtual = parseInt(prompt(`Informe o ano atual`));
+        if((anoAtual - anoNascimento) > 18 && (anoAtual - anoNascimento) < 71){
+            alert(`Seu voto é obrigatório esse ano.`);
+        } else if(anoAtual - anoNascimento > 70) {
+            alert(`Seu voto é opcional esse ano.`);
+        }
+    </script>
+</body>
+</html>

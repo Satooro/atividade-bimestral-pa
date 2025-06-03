@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let notas = [];
+        let count;
+        let media = 0;
+        notas[0] = parseFloat(prompt(`Informe a nota da 1a. do aluno:`));
+        notas[1] = parseFloat(prompt(`Informe a nota da 1a. do aluno:`));
+        media = (notas[0] + notas[1]) / notas.length;
+        if(media >= 6){
+            alert(`Aluno aprovado. Média: ${media}`);
+        } else {
+            alert(`Aluno reprovado. Média: ${media}`)
+        }
+    </script>
+</body>
+</html>
