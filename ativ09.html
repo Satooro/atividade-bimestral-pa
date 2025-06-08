@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let horasTrabalhadas, salarioHora, salarioTotal;
+        horasTrabalhadas = parseInt(prompt(`Informe as horas trabalhadas em um mês`));
+        salarioHora = parseFloat(prompt(`Informe o salário por hora`));
+        let horasRegulares = 40 * 4;
+        let horasExtras = horasTrabalhadas > horasRegulares ? horasTrabalhadas - horasRegulares : 0;
+        salarioTotal = (horasRegulares * salarioHora) + (horasExtras * salarioHora * 1.5);
+        alert(`O funcionário trabalhou ${horasTrabalhadas} horas, com um salário por hora de R$${salarioHora}. O salário total foi de R$${salarioTotal.toFixed(2)}`);
+    </script>
+</body>
+</html>

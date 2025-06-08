@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let precos = [];
+        let codigos = [];
+        let maiorPreco, maiorPrecoCod;
+        let total = 0;
+        let count = 0;
+        for(count = 0; count<5; count++){
+            codigos[count] = parseFloat(prompt(`Informe o código do produto`))
+            precos[count] = parseFloat(prompt(`Informe o preço`));
+            if(precos[count] > maiorPreco || isNaN(maiorPreco)){
+                maiorPreco = precos[count];
+                maiorPrecoCod = codigos[count];
+            }
+            total = total + precos[count];
+        }
+        alert(`O maior preço lido foi do código "${maiorPrecoCod}" no valor de "${maiorPreco}"\nA média aritmética dos preços dos produtos é: ${total/precos.length}`)
+
+    </script>
+</body>
+</html>

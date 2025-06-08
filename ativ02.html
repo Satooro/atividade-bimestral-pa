@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let dimensoes = [];
+        dimensoes[0] = parseFloat(prompt(`Informe a base do retângulo:`));
+        dimensoes[1] = parseFloat(prompt(`Informe a altura do retângulo:`));
+        if(dimensoes[0] == dimensoes[1]){
+            alert(`As dimensões informadas são iguais, e o resultado é um quadrado e não retângulo.\nMas aqui está a área: ${dimensoes[0] * dimensoes[1]}`);
+        } else {
+            alert(`A dimensão do retângulo é: ${dimensoes[0] * dimensoes[1]}`);
+        }
+    </script>
+</body>
+</html>

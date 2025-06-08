@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nums = [];
+        let qntNums = 20;
+        let count;
+        for(count = 0; count < qntNums; count++){
+            nums[count] = parseInt(prompt(`Informe o ${count+1}º número:`));
+        }
+        nums.reverse((a,b) => {return b-a});
+        alert(nums);
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let totalEleitores = parseInt(prompt("Informe o total de eleitores do município:"));
+        let votosBrancos = parseInt(prompt("Informe o número de votos brancos:"));
+        let votosNulos = parseInt(prompt("Informe o número de votos núlos:"));
+        let votosInvalidos = parseInt(prompt("Informe o número de votos inválidos:"));
+        alert(`Total de Eleitores: ${totalEleitores}\nPorcentual de Votos Brancos: ${(votosBrancos / totalEleitores) * 100}%\nPorcentual de Votos Nulos: ${(votosNulos / totalEleitores) * 100}%\nPorcentual de Votos Inválidos: ${(votosInvalidos / totalEleitores) * 100}%`);
+    </script>
+</body>
+</html>

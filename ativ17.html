@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let litros = parseFloat(prompt(`Informe a quantia de litros:`));
+        let tipoComb = prompt(`Informe o combustível:\nA-Álcool\nG-Gasolina`);
+        let valores = [2.90, 3.30]; // [0]-álcool, [1]-gasolina
+        let total = 0;
+        if(tipoComb.toLocaleUpperCase() == `A`){
+            if(litros >= 21){
+                total = (valores[0] * 0.95) * litros;
+                alert(`O total de ${litros} litros de Álcool deu um total de ${total.toFixed(2)} sendo ${(valores[0] * 0.95).toFixed(2)} por litro`);
+            } else {
+                total = (valores[0] * 0.97) * litros;
+                alert(`O total de ${litros} litros de Álcool deu um total de ${total.toFixed(2)} sendo ${(valores[0] * 0.97).toFixed(2)} por litro`);
+            }
+        } else if(tipoComb.toUpperCase() == `G`){
+            if(litros >= 21){
+                total = (valores[1] * 0.95) * litros;
+                alert(`O total de ${litros} litros de Gasolina deu um total de ${total.toFixed(2)} sendo ${(valores[0] * 0.95).toFixed(2)} por litro`);
+            } else {
+                total = (valores[1] * 0.97) * litros;
+                alert(`O total de ${litros} litros de Gasolina deu um total de ${total.toFixed(2)} sendo ${(valores[0] * 0.97).toFixed(2)} por litro`);
+            }
+        }
+    </script>
+</body>
+</html>

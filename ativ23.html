@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt(`Informe uma quantia:`));
+        let count;
+        let vetorA = [], vetorB = [], vetorSoma = [];
+        for(count = 0; count < n; count++){
+            vetorA[count] = parseFloat(prompt(`Informe um número para o vetorA posição ${count+1}`));
+            vetorB[count] = parseFloat(prompt(`Informe um número para o vetorB posição ${count+1}`));
+            vetorSoma[count] = vetorA[count] + vetorB[count];
+        }
+        alert(`VetorA: ${vetorA}\nVetorB: ${vetorB}\nSoma: ${vetorSoma}`);
+    </script>
+</body>
+</html>
